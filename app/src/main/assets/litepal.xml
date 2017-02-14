@@ -4,7 +4,7 @@
     <version value = "1"/>
     <list>
         <mapping class = "com.coolweather.android.db.City"/>
-        <mapping class = "com.coolweather.android.db.Country"/>
+        <mapping class = "com.coolweather.android.db.County"/>
         <mapping class = "com.coolweather.android.db.Province"/>
     </list>
 </litepal>
