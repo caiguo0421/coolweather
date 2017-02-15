@@ -21,7 +21,7 @@ public class Utility {
      * @return true 成功，其他 失败
      */
     public static boolean handleProvinceResponse(String response){
-        if(TextUtils.isEmpty(response)){
+        if(!TextUtils.isEmpty(response)){
             try {
                 JSONArray array = new JSONArray(response);
                 for(int i=0;i<array.length();i++){
@@ -48,7 +48,7 @@ public class Utility {
      * @return
      */
     public static boolean handleCityResponse(String response,int provinceId){
-        if(TextUtils.isEmpty(response)){
+        if(!TextUtils.isEmpty(response)){
             try {
                 JSONArray array = new JSONArray(response);
                 for(int i=0;i<array.length();i++){
@@ -74,7 +74,7 @@ public class Utility {
      * @return
      */
     public static boolean handleCountyResponse(String response,int cityId){
-        if(TextUtils.isEmpty(response)){
+        if(!TextUtils.isEmpty(response)){
             try {
                 JSONArray array = new JSONArray(response);
                 for(int i=0;i<array.length();i++){
